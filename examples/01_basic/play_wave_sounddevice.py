@@ -1,5 +1,6 @@
 import librosa
 import sounddevice as sd
+import numpy as np
 
 
 def main():
@@ -17,6 +18,15 @@ def main():
     sd.wait()
 
     # or simply get blocked by as below
+
+    sd.play(wave, sr, blocking=True)
+
+    # for stereo audio
+    # NOTE: sounddevice need data of shape (len, 2),
+    # so we need to transpose axis
+
+    wave, sr = librosa.load(audio_path, sample_rate, mono=False)
+    wave = np.transpose(wave, [1, 0])
 
     sd.play(wave, sr, blocking=True)
 
