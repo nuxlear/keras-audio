@@ -5,7 +5,7 @@ import numpy as np
 
 def main():
 
-    audio_name = 'shore.wav'
+    audio_name = 'clap.wav'
     audio_path = '../../data/audio_files/' + audio_name
     sample_rate = 44100
 

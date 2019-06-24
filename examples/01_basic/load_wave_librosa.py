@@ -4,7 +4,7 @@ import timeit
 
 def main():
 
-    audio_name = 'shore.wav'
+    audio_name = 'rhythm.wav'
     audio_path = '../../data/audio_files/' + audio_name
     sample_rate = 44100     # usually use 16000, 22050, 44100, 48000, etc.
     is_stereo = True        # if wave file is stereo
