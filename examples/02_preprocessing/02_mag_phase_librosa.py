@@ -22,9 +22,11 @@ def main():
     # plot magnitude & phase
 
     librosa.display.specshow(librosa.power_to_db(mag))
+    plt.colorbar(orientation='horizontal')
     plt.show()
 
     librosa.display.specshow(phase)
+    plt.colorbar(ticks=[-np.pi, -np.pi/2, 0, np.pi/2, np.pi], orientation='horizontal')
     plt.show()
 
     # or you can simply use librosa function
@@ -38,9 +40,11 @@ def main():
     mag, phase = librosa.magphase(spec)
 
     librosa.display.specshow(librosa.power_to_db(mag))
+    plt.colorbar(orientation='horizontal')
     plt.show()
 
     librosa.display.specshow(phase)     # it just uses magnitude of phase from librosa.magphase()
+    plt.colorbar(orientation='horizontal')
     plt.show()
 
 

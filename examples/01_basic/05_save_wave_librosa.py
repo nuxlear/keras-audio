@@ -24,6 +24,10 @@ def main():
 
     librosa.output.write_wav(audio_path, wave, sr)
 
+    # for save as stereo audio
+
+    librosa.output.write_wav(audio_path, np.stack([wave, wave]), sr)
+
 
 if __name__ == '__main__':
     main()

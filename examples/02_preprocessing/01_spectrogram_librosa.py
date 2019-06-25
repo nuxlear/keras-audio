@@ -6,7 +6,7 @@ import numpy as np
 
 def main():
 
-    audio_name = 'clap.wav'
+    audio_name = 'test.wav'
     audio_path = '../../data/audio_files/' + audio_name
     sample_rate = 44100
 
@@ -24,6 +24,8 @@ def main():
     librosa.display.specshow(dB)
 
     # we need matplotlib to plot specshow
+
+    plt.colorbar()
     plt.show()
 
     # for stereo audio
@@ -37,6 +39,7 @@ def main():
     for spec, ax in zip(specs, axes):
         spec = librosa.power_to_db(spec)    # amplitude_to_db(S) == power_to_db(S**2)
         librosa.display.specshow(spec, ax=ax)
+
     plt.show()
 
 

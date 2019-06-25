@@ -44,6 +44,8 @@ Example codes for basic load/save and play to listen.
 
 Example codes for feature extraction, converting, and feature visualization.
 
-- spectrogram
+- STFT (spectrogram)
 - magnitude & phase
-- mel-spectogram 
+- mel-spectrogram
+- MFCC (mel-frequency cepstral coefficient)
+- inverse STFT
