@@ -32,7 +32,18 @@ for playback:
 - [pygame.mixer](https://www.pygame.org/docs/ref/mixer.html)
 
 
-##### 01. Basic
+#### 01. Basic
 
 Example codes for basic load/save and play to listen. 
 
+- load/save wave
+- playback
+- plot waveform
+
+#### 02. Preprocessing
+
+Example codes for feature extraction, converting, and feature visualization.
+
+- spectrogram
+- magnitude & phase
+- mel-spectogram 
