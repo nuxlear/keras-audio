@@ -1,6 +1,9 @@
 # keras-audio
 
-implementation and examples for audio signal processing with using Keras. 
+Implementation and examples for audio signal processing with using Keras. 
+
+This repository is supplementary for my presentation: 
+["Hand-On Audio for Deep Learning (Practice)"](https://docs.google.com/presentation/d/1SsesME3qtCvvJy6yqW1EOXPC0Rc-vwb0OmS4QXi_cao/edit#slide=id.g5cf03feef5_0_860) 
 
 
 
@@ -49,3 +52,7 @@ Example codes for feature extraction, converting, and feature visualization.
 - mel-spectrogram
 - MFCC (mel-frequency cepstral coefficient)
 - inverse STFT
+- RMS normalization
+
+#### 03. Augmentation
+
